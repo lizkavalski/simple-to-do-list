@@ -1,0 +1,25 @@
+{
+  "name": "simple-to-do-list",
+  "version": "1.0.0",
+  "description": "\"a simple to-do app using jquray\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizkavalski/simple-to-do-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lizkavalski/simple-to-do-list/issues"
+  },
+  "homepage": "https://github.com/lizkavalski/simple-to-do-list#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  }
+}

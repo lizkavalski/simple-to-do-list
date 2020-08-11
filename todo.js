@@ -1,22 +1,23 @@
 'use strict';
+$('#addTesk').click(function(){
+  let newTesk = $('#teskInput').val();
+  if(newTesk !== ''){
+    let count = $('#teskList').children().length;
+    $('#teskList').append('<li class="listItem deletetask bg-success">' + count + '.' + newTesk + '</li>');
+    $('#teskInput').val('');
+    deleteTasks();
 
-$(document).ready(function() { 
-  $('.btn-success').click(function() { 
-    if ($('#text').val().length !== 0) { 
-      var x = $('.container').html(); 
-      var y =
-`<div class="alert alert-success alert-dismissible fade in"> 
-<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a> 
-                ` + $('#text').val() + `</div>`; 
-      $('.container').html(y + x); 
-      $('#text').val(""); 
-    } else alert("Enter some Text!"); 
-  }); 
-  // When Task is clicked 
-  $(document).on('click', '.alert', function() { 
-    if ($(this).css('text-decoration-line') == "none") 
-      $(this).css('text-decoration-line', 'line-through'); 
-    else{
-      $(this).css('text-decoration-line', 'none'); 
-    }); 
+    setTimeout(function(){
+      $('#taskList li.bg-success').removeClass('bg-success');
+    },1000);
+  } else {
+    alert('Come on, you\'re better than that');
+  }
 });
+// });
+
+const deleteTasks = () => {
+  $('.deletetask').click(function(){
+    $(this).remove();
+  });
+};

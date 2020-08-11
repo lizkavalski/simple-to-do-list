@@ -1,5 +1,6 @@
 'use strict';
 const express = require('express');
+// const addTaskToDo = require('./todo');
 require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3030;
@@ -18,7 +19,8 @@ app.get('*', getError);
 app.listen(port,() => console.log(`listening on port: ${port}`));
 
 
-function getError(request, response) {
-  console.error('From error handler: request.error', request.error);
-  response.render('error');
+function getError(req, res) {
+  console.error('From error handler: req.error', req.error);
+  res.render('error');
+  app.use(express.static('./error'));
 }

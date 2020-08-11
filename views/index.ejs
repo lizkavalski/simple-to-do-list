@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <%- include('layout/head') %>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <%- include('head') %>
    <body>
     <header>
-        <%- include('layout/header') %>
+    <h1>
+        A Simple To-do list
+   </h1>
     </header>
        <main>
            <fieldset>
                <form>
-                   <input type="text" placeholder="Add Tesk">
-                   <button> Add to list </button>
+                   <input type="text" placeholder="Add Tesk" name="teskInput">
+                   <button id="addTask"> Add to list </button>
                </form>
            </fieldset>
            <h4> My Tesks</h4>
-           <div class="container">
-
+           <div class="holdTesk">
+            <ol id="teskList">
+            </ol>
            </div>
        </main>
    </body>

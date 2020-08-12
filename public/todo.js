@@ -4,7 +4,7 @@ $(document).ready(
     $('#button').click(
       function(){
         var toAdd = $('input[name=ListItem]').val();
-        $('ol').append('<li>' + toAdd + '</li>');
+        $('ol').append('<li>' + toAdd + ' <button id="done"> X </button> </li>');
       });
 
     $('input[name=ListItem]').keyup(function(event){
@@ -14,7 +14,7 @@ $(document).ready(
       }
     });
 
-    $(document).on('dblclick','li', function(){
+    $(document).on('click','li', function(){
       $(this).toggleClass('strike').fadeOut('slow');
     });
 

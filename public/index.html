@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>A Simple To-do List</Title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script data-require="jquery" data-semver="3.2.1" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+		<script src="todo.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
+
+		<link href="/styles/reset.css" rel="stylesheet" type="text/css"/>
+		<link href="/styles/style.css" rel="stylesheet" type ="text/css" />
+	</head>
+	<body>
+		<div class="container">
+		<header>
+			<h2>Simple To-Do List</h2>
+			<p><em>Type in your task and hit the 'X' or row when task is completed.</em></p>
+		</header>
+		<fieldset>
+			<form id="toDoList">
+				<input type="text" id="ListItemInput" placeholder="Enter task"/>
+			</form>
+			<button id="button">Add</button>
+		</fieldset>
+		
+		<br/>
+		<ol id="listGroup"></ol>
+
+		</div>
+	</body>
+</html>

@@ -34,3 +34,11 @@ li{
   border-radius: 2em;
   padding: .25em 0em;
 }
+#deletetask{
+  background:green;
+  border-radius: 1em;
+  color:whitesmoke;
+}
+#deletetask:hover{
+  background:rgb(253, 45, 45) ;
+}

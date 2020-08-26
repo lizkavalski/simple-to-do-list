@@ -1,14 +1,14 @@
 'use strict';
 $(document).ready(
   function(){
-    $('#button').on('keypress || click',
+    $('#toDoList').on('submit',
       function(e){
         let toAdd = $('#ListItemInput').val();
+        e.preventDefault();
         if(toAdd !== ''){
-          if(e.which === 13 || e.type === 'click'){
-            $('#listGroup').append('<li>' + toAdd + ' <button id="deletetask"> X </button></li>');
-            $('#ListItemInput').val('');
-          }
+          $('#listGroup').append('<li>' + toAdd + ' <button id="deletetask"> X </button></li>');
+          $('#ListItemInput').val('');
+          console.log('line 10', toAdd);
         } else{
           alert('Need to put in a task please.');
         }

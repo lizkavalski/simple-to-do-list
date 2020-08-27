@@ -25,3 +25,19 @@ fieldset{
   flex-wrap: nowrap;
   text-align: center;
 }
+li{
+  background: chartreuse;
+  font-family:'Open Sans', sans-serif;
+  text-align: center;
+  margin: .5em 2em;
+  border-radius: 2em;
+  padding: .25em 0em;
+}
+#deletetask{
+  background:green;
+  border-radius: 1em;
+  color:whitesmoke;
+}
+#deletetask:hover{
+  background:rgb(253, 45, 45) ;
+}

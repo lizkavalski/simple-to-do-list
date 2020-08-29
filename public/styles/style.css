@@ -17,6 +17,13 @@ h2{
   font-size: 5em;
   padding: .3em .5em;
 }
+button{
+  font-family: 'Mystery Quest', cursive;
+  font-size: 1em;
+}
+input{
+  font-family:'Open Sans', sans-serif;
+}
 p{
   font-size: 1.3em;
 }
@@ -25,18 +32,19 @@ fieldset{
   flex-wrap: nowrap;
   text-align: center;
 }
+
 li{
-  background: chartreuse;
+  background: chartreuse .5;
   font-family:'Open Sans', sans-serif;
-  text-align: center;
   margin: .5em 2em;
   border-radius: 2em;
-  padding: .25em 0em;
+  padding: .25em 1em;
+  list-style: none;
 }
 #deletetask{
   background:green;
-  border-radius: 1em;
-  color:whitesmoke;
+  border-radius: .5em;
+  color:whitesmoke;;
 }
 #deletetask:hover{
   background:rgb(253, 45, 45) ;

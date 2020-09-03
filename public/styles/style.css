@@ -34,7 +34,7 @@ fieldset{
 }
 
 li{
-  background: chartreuse .5;
+  background: rgb(188, 255, 121) ;
   font-family:'Open Sans', sans-serif;
   margin: .5em 2em;
   border-radius: 2em;
@@ -44,7 +44,9 @@ li{
 #deletetask{
   background:green;
   border-radius: .5em;
-  color:whitesmoke;;
+  margin-right: .5em;
+  color:whitesmoke;
+ 
 }
 #deletetask:hover{
   background:rgb(253, 45, 45) ;

@@ -6,7 +6,7 @@ $(document).ready(
         let toAdd = $('#ListItemInput').val();
         e.preventDefault();
         if(toAdd !== ''){
-          $('#listGroup').append('<li>' + toAdd + ' <button id="deletetask"> X </button></li>');
+          $('#listGroup').append('<li> <button id="deletetask"> X </button>' + toAdd + ' </li>');
           $('#ListItemInput').val('');
           console.log('line 10', toAdd);
         } else{

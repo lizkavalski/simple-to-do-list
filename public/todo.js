@@ -14,8 +14,7 @@ $(document).ready(
         e.preventDefault();
         if(toAdd !== ''){
           $('#listGroup').append('<li> <button id="deletetask"> X </button>' + toAdd + ' </li>');
-          let inStorage = localStorage.setItem(toAdd, JSON.stringify(toAdd));
-          console.log('this is the local storage', inStorage)
+          localStorage.setItem('list', JSON.stringify(toAdd));
           $('#ListItemInput').val('');
           console.log('line 10', toAdd);
         } else{
@@ -27,7 +26,7 @@ $(document).ready(
 
 $(document).on('click','li',function(){
   $(this).fadeOut('slow');
-  localStorage.removeItem(toAdd);
+  localStorage.removeItem('list');
 });
 
 

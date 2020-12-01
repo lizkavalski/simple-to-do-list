@@ -1,11 +1,12 @@
 'use strict';
-window.onload=function(){
-  let list = localStorage.getItem()
-  if(list !== null){
-    $('');
-  }
-}
+// window.onload=function(){
+//   let list = localStorage.getItem()
+//   if(list !== null){
+//     $('');
+//   }
+// }
 
+let allTask= localStorage.getItem('list')||[]
 $(document).ready(
   function(){
     $('#toDoList').on('submit',
@@ -14,7 +15,8 @@ $(document).ready(
         e.preventDefault();
         if(toAdd !== ''){
           $('#listGroup').append('<li> <button id="deletetask"> X </button>' + toAdd + ' </li>');
-          localStorage.setItem('list', JSON.stringify(toAdd));
+          let newTask = localStorage.setItem('list', JSON.stringify(toAdd));
+          allTask.push(newTask);
           $('#ListItemInput').val('');
           console.log('line 10', toAdd);
         } else{
@@ -24,8 +26,8 @@ $(document).ready(
   }
 );
 
-$(document).on('click','li',function(){
-  $(this).fadeOut('slow');
+$(document).on('click','#deletetask',function(){
+  $('li').fadeOut('slow');
   localStorage.removeItem('list');
 });
 

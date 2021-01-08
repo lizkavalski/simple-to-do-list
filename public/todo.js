@@ -15,13 +15,13 @@ $(document).ready(
           alert('Need to put in a task please.');
         }
         localStorage.setItem('list', JSON.stringify(allTask));
+        // $('#listGroup').html(localStorage.getItem('list'))
       });
   }
 );
 
 $(document).on('click','#deletetask',function(){
-  $('li').fadeOut('slow');
-  localStorage.removeItem('list');
+  $(this).parent().fadeOut('slow');
 });
 
 

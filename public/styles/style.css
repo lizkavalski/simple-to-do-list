@@ -1,15 +1,12 @@
 body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 50em;
+  margin: 0 auto;
+  text-align: center;
 }
 
 header{
   background-color: rgb(145, 255, 255);
   border-radius: 4em; 
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
   padding: .5em 1em;
   font-family: 'Mystery Quest', cursive;
 }
@@ -19,30 +16,36 @@ h2{
 }
 button{
   font-family: 'Mystery Quest', cursive;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 input{
   font-family:'Open Sans', sans-serif;
+  font-size: 1.1em;
 }
 p{
   font-size: 1.3em;
 }
 fieldset{
-  flex-direction: row;
-  flex-wrap: nowrap;
+  background-color: rgb(222, 151, 255);
+  margin:.5em auto ;
+  /* margin-left: auto;
+  margin-right: auto; */
   text-align: center;
-  padding-top: 1em;
+  border-radius: 2em;
+  padding: 1em;
+  max-width: 20em;
 }
 
 li{
   background: rgb(188, 255, 121) ;
   font-family:'Open Sans', sans-serif;
   margin: .5em 2em;
+  text-align: left;
   border-radius: 2em;
   padding: .5em 1.5em;
   list-style: none;
 }
-#deletetask{
+.deletetask{
   background:rgb(5, 167, 5);
   border-radius: .5em;
   margin-right: .5em;
@@ -50,6 +53,6 @@ li{
   font-family:'Open Sans', sans-serif;
  
 }
-#deletetask:hover{
+.deletetask:hover{
   background:rgb(253, 45, 45) ;
 }

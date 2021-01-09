@@ -1,5 +1,9 @@
 # simple-to-do-list
 
-Creating a simple little to-do list with jquery
+Creating a simple little to-do list with jquery and different ways to store data.
 
-<!-- this is just a test add more to see differet-->
+### Data Storage used: 
+1. [Local Storage](https://simple-to-do-list-localstorage.herokuapp.com/)
+  * *Note: If wenting to make a new list after clearing please refreah the page*
+
+

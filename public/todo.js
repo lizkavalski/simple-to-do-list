@@ -1,4 +1,6 @@
 'use strict';
+
+let allTask = [];
 $(document).ready(
   function(){
     $('#toDoList').on('submit',
@@ -6,19 +8,23 @@ $(document).ready(
         let toAdd = $('#ListItemInput').val();
         e.preventDefault();
         if(toAdd !== ''){
-          $('#listGroup').append('<li> <button id="deletetask"> X </button>' + toAdd + ' </li>');
+          $('#listGroup').append('<li> <button class="deletetask"> X </button>' + toAdd + ' </li>');
+          allTask.push(toAdd);
           $('#ListItemInput').val('');
-          console.log('line 10', toAdd);
         } else{
           alert('Need to put in a task please.');
         }
+        localStorage.setItem('list', JSON.stringify(allTask));
       });
   }
 );
 
-
-
-$(document).on('click','li',function(){
-  $(this).fadeOut('slow');
+$(document).on('click','.deletetask',function(){
+  $(this).parent().fadeOut('slow');
 });
+
+$(document).on('click','.deleteEverything',function(){
+  $('#listGroup').fadeOut('slow');
+  localStorage.clear('list')
+})
 

@@ -6,8 +6,6 @@ const port = process.env.PORT || 3030;
 
 app.use(express.static(__dirname + '/public'));
 
-app.set('view engine', 'ejs');
-
 app.get('/', (req, res) => {
   res.render('/public');
   app.use(express.static('./public'));

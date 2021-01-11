@@ -17,6 +17,7 @@ h2{
 button{
   font-family: 'Mystery Quest', cursive;
   font-size: 1.1em;
+  border-radius:.5em;
 }
 input{
   font-family:'Open Sans', sans-serif;
@@ -35,10 +36,12 @@ fieldset{
   padding: 1em;
   max-width: 20em;
 }
-
+input{
+  font-family:'Lato', sans-serif;
+}
 li{
   background: rgb(188, 255, 121) ;
-  font-family:'Open Sans', sans-serif;
+  font-family:'Lato', sans-serif;
   margin: .5em 2em;
   text-align: left;
   border-radius: 2em;
@@ -50,9 +53,13 @@ li{
   border-radius: .5em;
   margin-right: .5em;
   color:whitesmoke;
-  font-family:'Open Sans', sans-serif;
+  font-family:'Lato', sans-serif;
  
 }
 .deletetask:hover{
+  background:rgb(253, 45, 45) ;
+}
+.deleteEverything:hover{
+  font-family: 'Black Ops One', cursive;
   background:rgb(253, 45, 45) ;
 }

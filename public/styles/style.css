@@ -41,7 +41,19 @@ input{
 }
 li{
   background: rgb(188, 255, 121) ;
+  border: rgb(0, 134, 0) solid .5em;
   font-family:'Lato', sans-serif;
+  margin: .5em 2em;
+  text-align: left;
+  border-radius: 2em;
+  padding: .5em 1.5em;
+  list-style: none;
+}
+li:nth-child(odd) { 
+  background:rgb(0, 134, 0); 
+  border: rgb(188, 255, 121) solid .5em;
+  font-family:'Lato', sans-serif;
+  color: whitesmoke;
   margin: .5em 2em;
   text-align: left;
   border-radius: 2em;
